@@ -5,10 +5,7 @@ body {
   scroll-behavior: smooth;
   display: flex;
 }
-/* Hide menu by default on small screens */
-#menu-toggle ~ .sidebar .menu {
-  display: none;
-}
+
 
 /* Show menu when checkbox is checked */
 #menu-toggle:checked ~ .sidebar .menu {
@@ -17,17 +14,15 @@ body {
   width: 100%;
   text-decoration: none;
   margin-top: 1rem;
-  color: white;
+  color:black;
 }
 
 
 /* Menu icon styling */
 .menu-icon {
-  
-  display: none;
   font-size: 2rem;
   cursor: pointer;
-  color:white;
+  color:black;
   margin-bottom: 1rem;
 }
 .sidebar nav a {
@@ -200,6 +195,34 @@ footer {
 .contact-button:hover {
   background-color: #005fd1;
 }
+@media (max-width: 768px) {
+  .menu {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    top: 60px; /* Adjust according to your header height */
+    left: 0;
+    z-index: 999;
+  }
+
+  #menu-toggle:checked ~ .sidebar .menu {
+    display: flex;
+  }
+
+  .sidebar {
+    flex-direction: column;
+    position: relative;
+    background-color: white;
+    padding-bottom: 2rem;
+  }
+
+  .sidebar nav a {
+    color: black;
+  }
+}
 
 @media (max-width: 768px) {
   .about-card {
@@ -350,19 +373,7 @@ h1 {
     width: 100%;
   }
 
-  .sidebar {
-    position: relative;
-    width: 100%;
-    height: auto;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 1rem;
-  }
-
-  .sidebar nav {
-    flex-direction: row;
-    gap: 0.5rem;
-  }
+ 
 }
 
 /* Contact Section */
@@ -538,7 +549,13 @@ button:hover {
 .social-icons {
   border-top: 1px solid #444; /* subtle line above social icons */
   padding-top: 4rem;
+  size: 200px;
   margin-top: 4rem; /* Adds a small gap between icons and content above */
+}
+@media (max-width: 768px) {
+  .social-icons a {
+    color: black;
+  }
 }
 .resume-button {
   display: inline-block;
