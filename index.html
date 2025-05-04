@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+</head>
+<body>
+  <input type="checkbox" id="menu-toggle" hidden>
+
+<div class="sidebar">
+  <label for="menu-toggle" class="menu-icon">&#9776;</label> <!-- Hamburger icon -->
+  <div class="logo">Sumiya</div>
+
+  <nav class="menu" id="menu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#proj">Projects</a>
+    <a href="#cert">Certificates</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin" target="_blank">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="https://github.com/22471A05C8" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.hackerrank.com/profile/sumiyashaik737" target="_blank">
+      <i class="fab fa-hackerrank"></i>
+    </a>
+  </div>
+  
+  
+</div>
+
+  
+  <!-- Main Content -->
+  <main>
+    <section class="hero" id="home">
+      <h1>Hi, I'm Sumiya Shaik</h1>
+      <p>Web Developer</p>
+      <a href="images/sumiyashaikresume.pdf" target="_blank" class="resume-button">View Resume (PDF)</a>
+      <a href="images/sumiyashaikresume.pdf" download class="resume-button download-button">Download Resume (PDF)</a>
+    </section>
+
+    
+    <section id="about" class="about-section">
+      <h2>About Me</h2>
+      <div class="about-container">
+        <div class="about-card">
+          <div class="about-image">
+            <img src="images/profile.jpg" alt="Sumiya Shaik" />
+          </div>
+          <div class="about-content">
+            <h3>Sumiya Shaik</h3>
+            <p class="bio">Hello! I'm a passionate Web Developer based in Andhra Pradesh. I specialize in crafting responsive, interactive, and visually appealing websites. With a strong foundation in HTML, CSS, JavaScript, and React, I love turning ideas into functional digital experiences.</p>
+            
+            <div class="details-grid">
+              <div><strong>Age:</strong> 20</div>
+              <div><strong>Email:</strong> sumiyashaik7372gmail.com</div>
+              <div><strong>Phone:</strong> +91-9010292115</div>
+              <div><strong>Location:</strong> Andhra Pradesh, India</div>
+              <div><strong>Education:</strong> B.Tech in CSE</div>
+              <div><strong>Languages:</strong> English, Telugu, Hindi</div>
+            </div>
+            
+            <a href="#contact" class="contact-button">Let's Connect</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <section id="skills" class="skills">
+      <h1>My Skills</h1>
+      <div class="skills-grid">
+        <div class="skill-box"><div class="skill-name">HTML</div></div>
+        <div class="skill-box"><div class="skill-name">CSS</div></div>
+        <div class="skill-box"><div class="skill-name">JavaScript</div></div>
+        <div class="skill-box"><div class="skill-name">Python</div></div>
+        <div class="skill-box"><div class="skill-name">React</div></div>
+        <div class="skill-box"><div class="skill-name">Node.js</div></div>
+        <div class="skill-box"><div class="skill-name">SQL</div></div>
+        <div class="skill-box"><div class="skill-name">Git</div></div>
+        <div class="skill-box"><div class="skill-name">C</div></div>
+        <div class="skill-box"><div class="skill-name">Data Structures</div></div>
+      </div>
+    </section>
+
+    <section id="proj" class="projects">
+      <h1>My Projects</h1>
+      <div class="portfolio">
+        <div class="card">
+          <img src="images/fp.webp" alt="Project 1">
+          <div class="card-content">
+            <h2 class="card-title">Csp Project</h2>
+            <p class="card-description">A Project about pesticides and fertilizers.</p>
+            <a href="https://drive.google.com/file/d/1HnOUxw3pyxRq9tLSuK0oykl1GtOOnGUO/view?usp=sharing" class="card-link">View Project</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/tt.jpg" alt="Project 2">
+          <div class="card-content">
+            <h2 class="card-title">Android Project</h2>
+            <p class="card-description">Mobile app for booking travel guides worldwide.</p>
+            <a href="https://drive.google.com/file/d/1vPeuR4m4jkqWA3MMWO5lsjKSGOQxREcC/view?usp=sharing" class="card-link">View Project</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/sf.webp" alt="Project 3">
+          <div class="card-content">
+            <h2 class="card-title">HTML & CSS</h2>
+            <p class="card-description">Static web page for flamingo carts.</p>
+            <a href="images/proj3.jpg" class="card-link">View Project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cert">
+      <h1>My Certificates</h1>
+      <div class="cert-grid">
+        <div class="cert-card">
+          <img src="images/Screenshot 2025-04-29 142159.png" alt="Python Certificate">
+          <div class="cert-caption">NPTEL</div>
+          <p align="center">JOY OF COMPUTING USING PYTHON</p>
+        </div>
+        <div class="cert-card">
+          <img src="images/Screenshot 2025-04-29 143124.png" alt="IoT Certificate">
+          <div class="cert-caption">NPTEL</div>
+          <p align="center">INTERNET OF THINGS</p>
+        </div>
+        <div class="cert-card">
+          <img src="images/python.png" alt="Hackerrank python(Basic) ">
+          <div class="cert-caption">HACKERRANK</div>
+          <p align="center">PYTHON BASICS </p>
+        </div>
+        <div class="cert-card">
+          <img src="images/sqlbasic.png" alt="Hackerrank SQL Basic">
+          <div class="cert-caption">HACKERRANK</div>
+          <p align="center">SQL BASICS </p>
+        </div>
+        <div class="cert-card">
+          <img src="images/js-basic.png" alt="Hackerrank JavaScript (Basic)">
+          <div class="cert-caption">HACKERRANK</div>
+          <p align="center">JAVASCRIPT BASICS</p>
+        </div>
+        <div class="cert-card">
+          <img src="images/ANDROID.jpg" alt="Android Workshop">
+          <div class="cert-caption">WORKSHOP</div>
+          <p align="center">ANDROID</p>
+        </div>
+        <div class="cert-card">
+          <img src="images/HACK-A-THON.jpg" alt="24 HOURS HACK-A-THON">
+          <div class="cert-caption">24 HOURS HACK-A-THON</div>
+          <p align="center">HACK-A-THON</p>
+        </div>
+        <div class="cert-card">
+          <img src="images/Hi-Tech-Chase.jpg" alt="Hi-Tech-Chase">
+          <div class="cert-caption">TECHNICAL FEST(JUBLIATION 2K24)</div>
+          <p align="center">Hi-Tech-Chase</p>
+        </div>
+        <div class="cert-card">
+          <img src="images/NMMS.jpg" alt="SCHLOERSHIP TEST">
+          <div class="cert-caption">NMMS MERIT TEST</div>
+          <p align="center">NMMS</p>
+        </div>
+       
+        
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact-container">
+        <h1>Contact Me</h1>
+        <p align="center">Have a question, project, or opportunity? I'd love to hear from you.</p>
+        <form action="https://formspree.io/f/yourformid" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      &copy; 2025 Sumiya Shaik. All rights reserved.
+    </footer>
+  </main>
+</body>
+</html>
